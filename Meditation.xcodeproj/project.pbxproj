@@ -16,6 +16,7 @@
 		CE38F833291E26F7003CA380 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE38F832291E26F7003CA380 /* Alamofire */; };
 		CE38F836291E270C003CA380 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CE38F835291E270C003CA380 /* SwiftyJSON */; };
 		CE38F839291E27AA003CA380 /* Alegreya in Resources */ = {isa = PBXBuildFile; fileRef = CE38F838291E27AA003CA380 /* Alegreya */; };
+		E00DCF75292F4A220046FB02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00DCF74292F4A220046FB02 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		CE38F829291E2679003CA380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE38F82B291E2679003CA380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE38F838291E27AA003CA380 /* Alegreya */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Alegreya; sourceTree = "<group>"; };
+		E00DCF70292F49D50046FB02 /* Meditation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Meditation-Bridging-Header.h"; sourceTree = "<group>"; };
+		E00DCF71292F49D50046FB02 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E00DCF74292F4A220046FB02 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +50,10 @@
 		CE38F811291E2677003CA380 = {
 			isa = PBXGroup;
 			children = (
+				E00DCF71292F49D50046FB02 /* MainViewController.h */,
 				CE38F81C291E2677003CA380 /* Meditation */,
 				CE38F81B291E2677003CA380 /* Products */,
+				E00DCF70292F49D50046FB02 /* Meditation-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +76,7 @@
 				CE38F826291E2679003CA380 /* Assets.xcassets */,
 				CE38F828291E2679003CA380 /* LaunchScreen.storyboard */,
 				CE38F82B291E2679003CA380 /* Info.plist */,
+				E00DCF74292F4A220046FB02 /* MainViewController.swift */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 				TargetAttributes = {
 					CE38F819291E2677003CA380 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -165,6 +173,7 @@
 				CE38F822291E2678003CA380 /* SingInViewController.swift in Sources */,
 				CE38F81E291E2677003CA380 /* AppDelegate.swift in Sources */,
 				CE38F820291E2677003CA380 /* SceneDelegate.swift in Sources */,
+				E00DCF75292F4A220046FB02 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -330,6 +340,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Meditation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -340,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -361,6 +374,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Meditation-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
